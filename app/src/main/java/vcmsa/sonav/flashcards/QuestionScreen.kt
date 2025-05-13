@@ -74,17 +74,11 @@ class QuestionScreen : AppCompatActivity() {
                 loadQuestion()
                 // end of prompt
             } else {
-                questionText.text = "Quiz Completed!\nScore: $score / ${questions.size}"
-                AnswerText.text = ""
-                trueBtn.isEnabled = false
-                falseBtn.isEnabled = false
-                nextBtn.isEnabled = false
 
-                nextBtn.setOnClickListener {
-                    val intent = Intent(this, QuestionScreen::class.java)
+                    val intent = Intent(this, scoreScreen::class.java)
                     startActivity(intent)
                 }
             }
         }
     }
-}
+

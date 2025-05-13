@@ -53,6 +53,10 @@ class scoreScreen : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    
+
+    class ReviewScreen {
+
     }
+
+}
 
