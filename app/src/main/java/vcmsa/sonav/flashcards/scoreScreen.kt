@@ -28,8 +28,14 @@ class scoreScreen : AppCompatActivity() {
         val btnReview = findViewById<Button>(R.id.btnReview)
 
         // Score
+        val = intent.getIntExtra(questionText.text = "Quiz Completed!\nScore: $score / ${questions.size}"
+                feedbackText.text = ""
+                trueBtn.isEnabled = false
+                falseBtn.isEnabled = false
+                nextBtn.isEnabled = false)
         val score = intent.getIntExtra("FINAL_SCORE", 0)
         val total = intent.getIntExtra("TOTAL_QUESTIONS", 5)
+
         tvScore.text = "$score / $total"
 
         // Feedback message
