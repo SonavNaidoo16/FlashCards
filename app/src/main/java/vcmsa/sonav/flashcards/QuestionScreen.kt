@@ -76,6 +76,7 @@ class QuestionScreen : AppCompatActivity() {
             } else {
 
                     val intent = Intent(this, scoreScreen::class.java)
+                        .putExtra("score",score)
                     startActivity(intent)
                 }
             }

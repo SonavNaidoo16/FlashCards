@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import vcmsa.sonav.flashcards.R.id.btnPlayAgain
 
 class scoreScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,19 +25,13 @@ class scoreScreen : AppCompatActivity() {
         // code starts here
         val tvScore = findViewById<TextView>(R.id.tvScore)
         val tvFeedback = findViewById<TextView>(R.id.tvFeedback)
-        val btnPlayAgain = findViewById<Button>(R.id.btnExit)
+        val btnPlayAgain = findViewById<Button>(R.id.btnPlayAgain)
         val btnReview = findViewById<Button>(R.id.btnReview)
 
         // Score
-        val = intent.getIntExtra(questionText.text = "Quiz Completed!\nScore: $score / ${questions.size}"
-                feedbackText.text = ""
-                trueBtn.isEnabled = false
-                falseBtn.isEnabled = false
-                nextBtn.isEnabled = false)
-        val score = intent.getIntExtra("FINAL_SCORE", 0)
-        val total = intent.getIntExtra("TOTAL_QUESTIONS", 5)
+        val score = intent.getIntExtra("score",0)
 
-        tvScore.text = "$score / $total"
+        tvScore.text = "$score / 5"
 
         // Feedback message
         tvFeedback.text = if (score >= 3) {
@@ -59,10 +54,5 @@ class scoreScreen : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-    class ReviewScreen {
-
-    }
-
 }
 
