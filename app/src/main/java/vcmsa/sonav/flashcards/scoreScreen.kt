@@ -55,4 +55,3 @@ class scoreScreen : AppCompatActivity() {
         }
     }
 }
-
