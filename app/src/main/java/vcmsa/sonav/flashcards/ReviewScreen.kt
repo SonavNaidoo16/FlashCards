@@ -1,6 +1,7 @@
 package vcmsa.sonav.flashcards
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,6 +18,6 @@ class ReviewScreen : AppCompatActivity() {
             insets
         }
         //code start here
-
+        val reviewText = findViewById<TextView>(R.id.tvReviewS1)
     }
 }
