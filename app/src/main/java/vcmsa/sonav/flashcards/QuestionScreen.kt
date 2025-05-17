@@ -40,14 +40,13 @@ class QuestionScreen : AppCompatActivity() {
         var score = 0
         var currentIndex = 0
 
-        // Load first question
+        // Question
         fun loadQuestion() {
             questionText.text = questions[currentIndex]
             AnswerText.text = ""
             trueBtn.isEnabled = true
             falseBtn.isEnabled = true
         }
-
         loadQuestion()
 
         //Question Answers
@@ -82,4 +81,3 @@ class QuestionScreen : AppCompatActivity() {
             }
         }
     }
-

@@ -18,15 +18,13 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="609dp"
+        android:layout_height="1037dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_3" />
 
     <TextView
@@ -46,73 +44,96 @@
 
     <TextView
         android:id="@+id/tvReviewS1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="75dp"
         android:layout_marginTop="48dp"
+        android:text=""
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvReview" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="202dp"
         android:layout_height="268dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="192dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent">
 
       <RadioButton
-          android:id="@+id/radioButton7"
+          android:id="@+id/radNM"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:text="Nelson Mandela was the president in 1994"
           android:textColor="#000000"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:text="RadioButton" />
+          android:textSize="16sp"
+          android:textStyle="bold" />
 
       <RadioButton
-          android:id="@+id/radioButton4"
+          android:id="@+id/radFrance"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:text="The capital of France is Berlin"
           android:textColor="#000000"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:text="RadioButton" />
+          android:textSize="16sp"
+          android:textStyle="bold" />
 
       <RadioButton
-          android:id="@+id/radioButton5"
+          android:id="@+id/radLungs"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:text="The human body has four lungs."
           android:textColor="#000000"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:text="RadioButton" />
+          android:textSize="16sp"
+          android:textStyle="bold" />
 
       <RadioButton
-          android:id="@+id/radioButton6"
+          android:id="@+id/radKotlin"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:text="Kotlin is used for Android development"
           android:textColor="#000000"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:text="RadioButton" />
+          android:textSize="16sp"
+          android:textStyle="bold" />
 
       <RadioButton
-          android:id="@+id/radioButton8"
+          android:id="@+id/radWater"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:text="Water freezes at 0°C."
           android:textColor="#000000"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:text="RadioButton" />
+          android:textSize="16sp"
+          android:textStyle="bold" />
     </RadioGroup>
 
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="212dp"
+        android:backgroundTint="#FFAB40"
+        android:text="Show"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
+    <Button
+        android:id="@+id/btnExitMain"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="212dp"
+        android:backgroundTint="#FF6F01"
+        android:text="EXIT"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow" />
   </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
