@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import vcmsa.sonav.flashcards.R.id.btnPlayAgain
 
 class scoreScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,13 +26,12 @@ class scoreScreen : AppCompatActivity() {
         val tvFeedback = findViewById<TextView>(R.id.tvFeedback)
         val btnPlayAgain = findViewById<Button>(R.id.btnPlayAgain)
         val btnReview = findViewById<Button>(R.id.btnReview)
+        val btnExit = findViewById<Button>(R.id.btnExitF)
 
         // Score
-        val score = intent.getIntExtra("score",0)
-
+        val score = intent.getIntExtra("score", 0)
         tvScore.text = "$score / 5"
-
-        // Feedback message
+        // Message
         tvFeedback.text = if (score >= 3) {
             "Great job!"
         } else {
@@ -47,11 +45,14 @@ class scoreScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
         // Review button
         btnReview.setOnClickListener {
             val intent = Intent(this, ReviewScreen::class.java)
             startActivity(intent)
+        }
+        //Closes app
+        btnExit.setOnClickListener {
+            finishAffinity()
         }
     }
 }
