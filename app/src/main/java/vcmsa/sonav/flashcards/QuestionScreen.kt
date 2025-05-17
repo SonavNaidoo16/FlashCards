@@ -60,12 +60,15 @@ class QuestionScreen : AppCompatActivity() {
             trueBtn.isEnabled = false
             falseBtn.isEnabled = false
         }
+        //set a click listener on the true button
         trueBtn.setOnClickListener {
             checkAnswer(true)
         }
+        ////set a click listener on the false button
         falseBtn.setOnClickListener {
             checkAnswer(false)
         }
+        //set a click listener on the next button
         nextBtn.setOnClickListener {
             //AI (pasted the above "fix my code")
             currentIndex++

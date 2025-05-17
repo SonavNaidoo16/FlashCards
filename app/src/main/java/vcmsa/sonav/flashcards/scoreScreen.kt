@@ -38,19 +38,19 @@ class scoreScreen : AppCompatActivity() {
             "Keep practising!"
         }
 
-        // Play Again button
+        //set a click listener on thePlay Again button
         btnPlayAgain.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
             finish()
         }
-        // Review button
+        //set a click listener on the Review button
         btnReview.setOnClickListener {
             val intent = Intent(this, ReviewScreen::class.java)
             startActivity(intent)
         }
-        //Closes app
+        //set a click listener on the exit button
         btnExit.setOnClickListener {
             finishAffinity()
         }
