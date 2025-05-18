@@ -130,3 +130,5 @@ IN APP SCREENSHOTS:
 ![image](https://github.com/user-attachments/assets/2fcc5164-71e6-42b6-921a-69df8a0fbb70)
 ![image](https://github.com/user-attachments/assets/e00eba74-9f31-41d5-8bbf-1231c09e75d2)
 
+Walkthrough of the app:
+https://youtu.be/x8zFBWbxDy8 
