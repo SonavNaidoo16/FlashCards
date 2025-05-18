@@ -21,7 +21,6 @@ class QuestionScreen : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         // code starts here
         val trueBtn = findViewById<Button>(R.id.btnTrue)
         val falseBtn = findViewById<Button>(R.id.btnFalse)
@@ -48,7 +47,6 @@ class QuestionScreen : AppCompatActivity() {
             falseBtn.isEnabled = true
         }
         loadQuestion()
-
         //Question Answers
         fun checkAnswer(userAnswer: Boolean) {
             if (userAnswer == answers[currentIndex]) {
@@ -84,3 +82,4 @@ class QuestionScreen : AppCompatActivity() {
             }
         }
     }
+//end of code

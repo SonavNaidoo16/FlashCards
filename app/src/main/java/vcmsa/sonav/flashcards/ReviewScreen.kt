@@ -32,7 +32,7 @@ class ReviewScreen : AppCompatActivity() {
         //set a click listener on the exit button
         exitBtn.setOnClickListener {
             finishAffinity()
-
+        }
             //set a click listener on the show answers button
             showbtn.setOnClickListener {
                 if (!radioNelson.isChecked && !radioFrance.isChecked && !radioLungs.isChecked && !radioKotlin.isChecked && !radioWater.isChecked
@@ -52,4 +52,4 @@ class ReviewScreen : AppCompatActivity() {
             }
         }
     }
-}
+//end of code

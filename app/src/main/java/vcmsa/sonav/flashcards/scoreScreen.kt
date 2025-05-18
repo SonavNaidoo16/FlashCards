@@ -37,7 +37,6 @@ class scoreScreen : AppCompatActivity() {
         } else {
             "Keep practising!"
         }
-
         //set a click listener on thePlay Again button
         btnPlayAgain.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -56,3 +55,4 @@ class scoreScreen : AppCompatActivity() {
         }
     }
 }
+//end of code
