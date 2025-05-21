@@ -13,24 +13,27 @@
       android:layout_width="0dp"
       android:layout_height="0dp"
       android:scaleType="centerCrop"
-      app:srcCompat="@drawable/img_3"
-      app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/img_3" />
 
   <TextView
       android:id="@+id/tvReview"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="72dp"
+      android:layout_marginTop="48dp"
       android:text="REVIEW"
       android:textColor="#000000"
       android:textSize="40sp"
       android:textStyle="bold"
-      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/tvReviewS1"
@@ -49,52 +52,52 @@
       android:id="@+id/radioGroup"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="88dp"
+      android:layout_marginTop="68dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/tvReviewS1">
 
     <RadioButton
-        android:id="@+id/radNM"
-        android:layout_width="wrap_content"
+        android:id="@+id/radBW"
+        android:layout_width="323dp"
         android:layout_height="wrap_content"
-        android:text="Nelson Mandela was the president in 1994"
+        android:text="The Berlin Wall was the wall that divided East and West Germany until 1989?"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <RadioButton
-        android:id="@+id/radFrance"
+        android:id="@+id/radTS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The capital of France is Berlin"
+        android:text="1905 was the year the Titanic sink?"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <RadioButton
-        android:id="@+id/radLungs"
+        android:id="@+id/radBP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The human body has four lungs."
+        android:text="China built the pyramids?"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <RadioButton
-        android:id="@+id/radKotlin"
-        android:layout_width="wrap_content"
+        android:id="@+id/radGW"
+        android:layout_width="323dp"
         android:layout_height="wrap_content"
-        android:text="Kotlin is used for Android development"
+        android:text="George Washington was the first President of the United States?"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <RadioButton
-        android:id="@+id/radWater"
-        android:layout_width="wrap_content"
+        android:id="@+id/radMLK"
+        android:layout_width="308dp"
         android:layout_height="wrap_content"
-        android:text="Water freezes at 0°C."
+        android:text="Martin Luther King Jr. was the famous civil rights leader who gave the I Have a Dream speech?"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold" />

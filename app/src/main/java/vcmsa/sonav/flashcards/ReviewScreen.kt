@@ -1,6 +1,7 @@
 package vcmsa.sonav.flashcards
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
@@ -21,11 +22,11 @@ class ReviewScreen : AppCompatActivity() {
         }
         //code start here
         val reviewText = findViewById<TextView>(R.id.tvReviewS1)
-        val radioNelson = findViewById<RadioButton>(R.id.radNM)
-        val radioFrance = findViewById<RadioButton>(R.id.radFrance)
-        val radioLungs = findViewById<RadioButton>(R.id.radLungs)
-        val radioKotlin = findViewById<RadioButton>(R.id.radKotlin)
-        val radioWater = findViewById<RadioButton>(R.id.radWater)
+        val radioWall = findViewById<RadioButton>(R.id.radBW)
+        val radioTitanic = findViewById<RadioButton>(R.id.radTS)
+        val radioPyramids = findViewById<RadioButton>(R.id.radBP)
+        val radioUS = findViewById<RadioButton>(R.id.radGW)
+        val radioCivil = findViewById<RadioButton>(R.id.radMLK)
         val showbtn = findViewById<Button>(R.id.btnShow)
         val exitBtn = findViewById<Button>(R.id.btnExitMain)
 
@@ -35,19 +36,25 @@ class ReviewScreen : AppCompatActivity() {
         }
             //set a click listener on the show answers button
             showbtn.setOnClickListener {
-                if (!radioNelson.isChecked && !radioFrance.isChecked && !radioLungs.isChecked && !radioKotlin.isChecked && !radioWater.isChecked
+                Log.d("ReviewScreen", "Suggest button clicked")
+
+                if (!radioWall.isChecked && !radioTitanic.isChecked && !radioPyramids.isChecked && !radioUS.isChecked && !radioCivil.isChecked
                 ) {
                     reviewText.text = "Please pick an option!"
+                    Log.d("ReviewScreen", "Suggest button clicked")
                 } else {
                     val selected = when {
-                        radioNelson.isChecked -> listOf("May 10, 1994 Nelson Mandela became President of the Republic of South Africa on May 10, 1994,")
-                        radioFrance.isChecked -> listOf("The capital of France is Paris, which is known for its cultural, financial, and political dominance as a primate city within the country")
-                        radioLungs.isChecked -> listOf("A typical human being has two lungs, essential for breathing and oxygen exchange.")
-                        radioKotlin.isChecked -> listOf("Kotlin is a modern, statically typed programming language that has become the preferred choice for Android development.")
-                        radioWater.isChecked -> listOf("The temperature of the freezing point of water is 0 °C, at which liquid water undergoes a phase transition to become solid ice at 1 atmosphere of pressure.")
+                        radioWall.isChecked -> listOf("The Berlin Wall was a guarded concrete barrier that encircled West Berlin from 1961 to 1989, separating it from East Berlin and the German Democratic Republic,")
+                        radioTitanic.isChecked -> listOf("RMS Titanic sank on 15 April 1912 in the North Atlantic Ocean.")
+                        radioPyramids.isChecked -> listOf("The ancient Egyptians built the pyramids through innovative engineering, human strength, and careful organization.")
+                        radioUS.isChecked -> listOf("The first president of the United States was George Washington, starting in 1789")
+                        radioCivil.isChecked -> listOf("‘I Have a Dream’ is one of the greatest speeches in American history. Delivered by Martin Luther King, Jr. (1929-68) in Washington D.C. in 1963")
                         else -> "Please pick an option!"
                     }
                     reviewText.text = selected.toString()
+
+                    //log review question
+                    Log.d("ReviewScreen", "Suggest button clicked")
                 }
             }
         }

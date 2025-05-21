@@ -29,11 +29,11 @@ class QuestionScreen : AppCompatActivity() {
         val AnswerText = findViewById<TextView>(R.id.tvAnswers)
 
         val questions = arrayOf(
-            "Nelson Mandela was the president in 1994.",
-            "The capital of France is Berlin.",
-            "The human body has four lungs.",
-            "Kotlin is used for Android development.",
-            "Water freezes at 0°C."
+            "The Berlin Wall was the wall that divided East and West Germany until 1989?", //true
+            "1905 was the year the Titanic sink?", //false
+            "China built the Egyptian pyramids?", //false
+            "George Washington was the first President of the United States?", //true
+            "Martin Luther King Jr. was the famous civil rights leader who gave the \"I Have a Dream\" speech?" //true
         )
         val answers = arrayOf(true, false, false, true, true)
         var score = 0
