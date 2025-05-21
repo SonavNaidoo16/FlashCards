@@ -38,7 +38,7 @@
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to FlashCard StudyApp!"
+        android:text="FlashCard StudyApp!"
         android:textColor="#FFFFFF"
         android:textSize="26sp"
         android:textStyle="bold"

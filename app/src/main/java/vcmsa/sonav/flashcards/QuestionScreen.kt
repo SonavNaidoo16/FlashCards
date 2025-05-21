@@ -48,10 +48,14 @@ class QuestionScreen : AppCompatActivity() {
         }
         loadQuestion()
         //Question Answers
+        //Ai assisted by chatGpt
+        // Prompt pasted the above code and said "Please fix my code above to allow it verify if a user's answer to a question is correct"
+        // Reset all radio buttons
         fun checkAnswer(userAnswer: Boolean) {
             if (userAnswer == answers[currentIndex]) {
                 AnswerText.text = "Correct!"
                 score++
+                // end prompt
             } else {
                 AnswerText.text = "Incorrect"
             }
@@ -68,11 +72,10 @@ class QuestionScreen : AppCompatActivity() {
         }
         //set a click listener on the next button
         nextBtn.setOnClickListener {
-            //AI (pasted the above "fix my code")
             currentIndex++
             if (currentIndex < questions.size) {
                 loadQuestion()
-                // end of prompt
+
             } else {
 
                     val intent = Intent(this, scoreScreen::class.java)

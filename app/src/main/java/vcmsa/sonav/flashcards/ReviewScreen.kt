@@ -44,6 +44,12 @@ class ReviewScreen : AppCompatActivity() {
                     Log.d("ReviewScreen", "Suggest button clicked")
                 } else {
                     val selected = when {
+                        //Information retrieved from https://www.wikipedia.org/
+                        //Berlin wall: https://en.wikipedia.org/wiki/Berlin_Wall
+                        //Titanic: https://www.worldhistory.org/RMS_Titanic/
+                        //Pyramids: https://www.encyclopedia.com/history/news-wires-white-papers-and-books/technology-and-engineering-building-pyramids#:~:text=The%20best-known%20monuments%20from%20ancient%20Egypt%20are%20the,used%20extremely%20simple%20technology%20to%20accomplish%20sophisticated%20ends.
+                        //US: https://learningenglish.voanews.com/a/george-washington-first-president/7972056.html
+                        //Civil: https://interestingliterature.com/2022/10/martin-luther-king-i-have-a-dream-speech-summary-analysis/
                         radioWall.isChecked -> listOf("The Berlin Wall was a guarded concrete barrier that encircled West Berlin from 1961 to 1989, separating it from East Berlin and the German Democratic Republic,")
                         radioTitanic.isChecked -> listOf("RMS Titanic sank on 15 April 1912 in the North Atlantic Ocean.")
                         radioPyramids.isChecked -> listOf("The ancient Egyptians built the pyramids through innovative engineering, human strength, and careful organization.")
